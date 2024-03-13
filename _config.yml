@@ -1,0 +1,64 @@
+# Site
+name: "kcdevdes"
+title: "Welcome to my blog"
+description: "CS student from South Korea"
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
+baseurl: /blog
+google_analytics: ''
+disqus: ''
+mailchimp-list: ''
+include: ["_pages"]
+permalink: /:title/
+
+# Authors
+authors:
+  kcdevdes:
+    name: Gibeom Choi
+    display_name: kcdevdes
+    gravatar: 77f2a5a872f904b2d94b563375d20782c5b224ccf177e32a6594cdee2343c302
+    email: kcdevdes@gmail.com
+    web: https://www.instagram.com/g_choi001/
+    #twitter: https://twitter.com/wowthemesnet
+    #instagram: https://www.instagram.com/g_choi001/
+    description: "CS student. I write about software development, programming, and other tech stuff. 컴퓨터과학을 공부하는 학생이에요. 다양한 걸 주제삼아 적어볼려고 해요. 좋은 글을 찾으셨으면 좋겠네요!"
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+    
+# Other
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+adsense: "disabled"
+adsense-data-ad-client: "ca-pub-3412143450191416"
+adsense-data-ad-slot: "1363087678"
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
